@@ -1,0 +1,61 @@
+<image class="bg" src="../../images/backg.png"></image>
+
+<view class="container">
+  <view class="page-body">
+    <view>
+      <image class="weather" src="../../images/sun1.png"></image>
+    </view>
+    <view class="datebox">
+      <view style="width:50%;font-size: 70rpx;">{{month}}月</view>
+      <view style="width:65%;font-size: 60rpx;color:#666;">{{year}}年</view>
+    </view>
+    <!-- <text class="diasta">日记统计</text> -->
+  </view>
+</view>
+<!--首页导航-->
+<view class="nav_wrap">
+    <!--自己滚动区域的组件-->
+    <scroll-view class="nav" scroll-x scroll-left="{{scrollLeft}}">
+      <view bindtap="activeNav" data-index="{{index}}" 
+      class="nav_item {{index===currentIndexNav?'active':''}}" 
+      wx:for="{{navList}}" wx:key="index" >
+      <view class="nav-wwrap">
+      
+          <image class="nav-img" src="{{navimg[index]}}"></image>
+          {{item}}</view>
+      </view>
+    </scroll-view>
+  </view>
+
+<view class="listview-container margin_bottom">
+<block wx:if="{{array.length}}">
+  <view wx:for="{{array}}" wx:key="index">
+    <view class="playlog-item" >
+      <view class="dotline">
+        <!-- 竖线 -->
+        <view class="line"></view>
+        <!-- 圆点 -->
+        <view class="dot">{{index+1}}</view>
+        <!-- <view class="time">{{item.CreateTime}}</view> -->
+        <!-- 时间戳 -->
+      </view>
+      <view class="content" bindtap="diaryContent" data-id="{{index}}">
+        <text class="ctime">{{item.write_down_time}}</text>
+        <text class="chapter">{{item.diary_content}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+<block wx:else >
+<view class="voiddiary">
+<text class="voiddi">空空如也，</text>
+<text class="voiddi">来写一篇日记吧</text>
+</view>
+
+</block>
+  
+</view>
+
+<image class="round-click" bindtap="editDairy" src="../../images/click3.png"></image>
+
+<eat id="eat" tags="{{tags}}" class="monster-eat"></eat>

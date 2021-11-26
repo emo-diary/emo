@@ -1,0 +1,9 @@
+
+<view class="search_input"> 
+  <view>
+    <input class="inp"  />
+    <button class="tapbtn1" plain="true" bindtap="gosearch" >
+     <image class="tapimg1" src='../../image/search.png'  bindtap="gosearch" ></image>
+    </button>
+  </view>
+</view>

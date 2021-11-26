@@ -1,0 +1,39 @@
+<!--pages/write/write.wxml-->
+<!-- <image class="bg" src="https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211123221439877-65809298.jpg"></image>  -->
+<view class="paperwrap">
+  <image class="bg"  src="https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211124172539587-1275545038.jpg"></image>
+</view>
+
+<!-- <view class="choosemood"> -->
+  
+  <picker bindchange="bindPickerChange" value="{{objectIndex}}" range="{{objectArray}}" range-key="name">
+    <view style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;">
+      <view class="date">{{_year}}/{{_month+1}}/{{day}}</view>
+      <view class="pickers">
+      当前心情：{{objectArray[objectIndex].name}}
+      </view>
+      
+    </view>
+ </picker>
+  
+<!-- </view>  -->
+
+
+  <view class="wri">
+    <textarea  bindinput='textinput' placeholder-class='placeholder'maxlength="-1" value='{{neirong}}'  >
+  </textarea>
+  </view>
+
+<view class="count">
+  <text class='botsum'>您已写 {{info}} 个字</text>
+</view>
+
+<!-- <button  class="save" style="background-image:url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211124221115777-1525517965.png);" plain='true'></button> -->
+
+<view class="bcwrap">
+  <button class="save" style="background-image:url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211124224455399-511691108.png);" plain='true' bindtap="editsuccess" ></button>
+</view>
+
+<image class="pic"  src="https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211125185055601-1361965124.png"></image>
+
+

@@ -1,0 +1,4 @@
+<!--components/comment/comment.wxml-->
+<button class="tapbtn1" plain="true" >
+    <image class="tapimg1" src='op4.png'></image>
+</button>

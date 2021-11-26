@@ -1,0 +1,143 @@
+/* pages/writes/writes.wxss */
+.wri {
+  margin-top: 0rpx;
+  margin-left: 30px;
+  margin-right: 30px;
+  /* text-align: center; */
+  border: 1px solid #ddd;
+  height: 500rpx;
+}
+.botsum {
+  position: relative;
+  top: 150rpx;
+  left: 450rpx;
+  font-size: 25rpx;
+  color: rgb(140, 140, 140);
+}
+
+.title{
+  color: #131414;
+  font-size: 16px;
+  font-family:"楷体";
+  margin: 20rpx;
+  margin-left: 0rpx;
+}
+
+.complain{
+  
+  padding: 15rpx;
+  border-radius: 20rpx;
+  margin-left: 60rpx;
+  background-color: #ffffff00;
+  border-radius: 20rpx; 
+  width: 80%;
+  border-radius: 5rpx;
+  border-radius: 20rpx;  /* 圆角的大小 */
+  box-shadow: 2rpx 2rpx 4rpx 4rpx #269092;
+}
+.bc {
+  background-color: #7ed8e4;
+  /* Green */
+  border: none;
+  color: white;
+  width: 80%;
+  margin-top: 60rpx;
+  border-radius: 98rpx;
+  letter-spacing: 15rpx;
+}
+
+.date {
+  display: inline-block;
+  margin-top: 24rpx;
+  margin-left: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #000000;
+  border-right: 4rpx solid transparent;
+  background-color: #d8eff3;
+  border-radius: 3px;
+}
+
+.day {
+  font-family: PingFangSC-Medium;
+  font-size: 60rpx;
+}
+
+/* 最外层：树洞帖子 */
+.t_post{
+  margin: 30px;
+  /* text-align: center; */
+  
+  
+  padding: 10rpx;  /* 间距 */
+  border-radius: 5rpx;
+  background-color: #ffffff00;
+  border-radius: 20rpx;  /* 圆角的大小 */
+}
+.t_post1{
+  width: 98%;
+  padding: 10rpx;  /* 间距 */
+  border-radius: 5rpx;
+  background-color: #effaf900;
+  border-radius: 20rpx;  /* 圆角的大小 */
+  word-wrap: break-word;
+  box-shadow: 2rpx 2rpx 4rpx 4rpx #caf2f3;
+} 
+
+/* 次外层：可链接详情的导航框 包含Id, time,post_text */
+.t_post2 {
+  height: 99.9%;
+  width: 99.9%;
+  justify-content: left;
+  align-items: top;
+  border-radius: 20rpx; 
+}
+
+/* 第一栏：id,time */
+.t_one{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between ;
+  line-height:13px;
+  margin:10rpx;
+}
+.t_name{
+  
+  font-size: 17px;
+  font-family:"楷体";
+}
+.t_time{
+  color: #9ca0a0;
+  font-size: 14px;
+}
+
+/* 第二栏：post_text */
+.t_potxt{
+  width: 100%;
+  font-size: 18px;
+  font-family:"楷体";
+  line-height: 50rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: justify;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  text-indent:2em;
+}
+.tt_potxt{
+  width: 100%;
+  font-size: 18px;
+  font-family:"楷体";
+  line-height: 50rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: justify;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}

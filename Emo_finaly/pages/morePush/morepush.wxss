@@ -1,0 +1,36 @@
+/* pages/morePush/morepush.wxss */
+.bg{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.mainconta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.pushItem {
+  justify-content: space-between;
+  border: 1px solid rgb(106, 209, 223);
+  border-radius: 8px;
+  margin: 10px;
+  width: 90%;
+  height:150rpx;
+  background-color: white;
+}
+.pushItem .content {
+  height:100rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pushItem .content .chapter {
+  font-size: 30rpx;
+  line-height: 50rpx;
+  color: #999;
+  white-space: normal;
+  padding-right: 10px;
+}
+/*时间部分*/

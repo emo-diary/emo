@@ -1,0 +1,40 @@
+/* pages/standard/standard.wxss */
+/* pages/our/our.wxss */
+.our{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  height: 200rpx;
+  position: relative;
+  margin:20rpx;
+}
+.intro{
+  margin:30rpx;
+  display: block;
+  /* height: 200rpx; */
+  width: 90%;
+  line-height:55rpx;
+  letter-spacing: 7rpx;
+  color:#636363;
+  font-size: 30rpx;
+}
+.intro1{
+  letter-spacing: 7rpx;
+  color:#636363;
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+/* page{
+  background-image: url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211125184839094-386638397.jpg);
+} */
+.bg{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  /* filter: blur(3rpx); */
+}

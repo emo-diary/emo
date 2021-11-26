@@ -1,0 +1,11 @@
+{
+  
+  "navigationBarTitleText": "搜索结果",
+  "usingComponents": {
+    "dianzan":"../../components/dianzan/dianzan",
+    "comment":"../../components/comment/comment",
+    "collect":"../../components/collect/collect",
+    "more":"../../components/more/more",
+    "head":"../../components/head/head"
+  }
+}

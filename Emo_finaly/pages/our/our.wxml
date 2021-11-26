@@ -1,0 +1,10 @@
+<!--pages/our/our.wxml-->
+<image class="bg" src="https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211125190952997-305581336.jpg"></image>
+<view class="our">
+<!-- <image class="logo" src="https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211116193803521-587971177.png" mode="aspectFit"></image> -->
+<text class="intro" decode="{{true}}">亲爱的用户：
+  &emsp;&emsp;您好！我们是由一群大学生组成的摸鲨鱼小队！
+  &emsp;&emsp;团队拥有8名成员，有融洽的合作氛围，秉承“认真、求实、开拓、创新”的理念，致力于对用户消极情绪的分析与调节，帮助您消解消极情绪，对生活充满热情，并能够更方便地自我情绪管理。
+  &emsp;&emsp;若我们的产品能帮到您，我们不胜荣幸。感谢您的支持与使用！             
+  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;2021年10月28日</text>
+</view>

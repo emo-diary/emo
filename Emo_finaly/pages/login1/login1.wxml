@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<image class="bg" src="../../images/backg.png"></image>
+<view class="container">
+  <view class="emodiary">
+    <div class="logo">
+      <image class="applogo" src="../../images/logo.png"></image>
+    </div>
+  </view>
+  <text class="appname">{{motto}}</text>
+  <text style="color:#999;">登录体验更多...</text>
+  <view class="firstbutton">
+    <block class="firstlogin" wx:if="{{!hasUserInfo}}">
+      <button class="firstloginbutton" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 立即登录 </button>
+      <button class="firstloginbutton" wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 立即登录 </button>
+    </block>
+    <block>
+        <button bindtap="fStroll" class="experience"> 我先逛逛 </button>
+    </block>
+  </view>
+  
+</view>

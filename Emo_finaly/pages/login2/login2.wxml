@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<image class="bg" src="../../images/backg.png"></image>
+<view class="container">
+  <view class="emodiary">
+    <div class="logo">
+      <image class="applogo" src="../../images/logo.png"></image>
+    </div>
+  </view>
+  <block >
+     <text class="explain1">申请获得以下权限</text>
+     <text class="explain2">获取你的公开信息（昵称、头像等）</text>
+  </block>
+  
+  <view class="firstbutton">
+    <block class="firstlogin" wx:if="{{!hasUserInfo}}">
+      <button class="firstloginbutton" wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 点击授权登录 </button>
+      <button class="firstloginbutton" wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 点击授权登录 </button>
+    </block>
+  </view>
+  
+</view>

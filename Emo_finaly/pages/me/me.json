@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "我的",
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#6AD1DF",
+  "navigationBarTextStyle":"black",
+  "usingComponents": {
+    "dianzan":"../../components/dianzan/dianzan",
+    "comment":"../../components/comment/comment",
+    "collect":"../../components/collect/collect",
+    "more":"../../components/more/more",
+    "head":"../../components/head/head",
+    "delete":"../../components/delete/delete"
+  }
+
+}

@@ -1,0 +1,79 @@
+<image class="bg" src="../../image/back.png"></image>
+<view class="total">
+
+  <!-- 搜索框 -->
+  <view class="total1">
+    <view class="search_input"> 
+      <view>
+        <input class="inp" bindinput="search_in" value='{{search_text}}' placeholder='搜索发现更多......'  placeholder-style="ph" type="text"  bindconfirm="gosearch"  />
+        <button class="tapbtn1" plain="true" bindtap="gosearch" >
+        <image class="tapimg1" src='../../image/search.png'  ></image>
+        </button>
+      </view>
+    </view>
+    <!-- <Searchinput class="search" >
+    </Searchinput> -->
+  </view>
+
+  <!-- 帖子模块 -->
+  <view class="total">
+    <!-- 循环输出帖子列表 -->
+    <view wx:for="{{array}}" wx:key="index">
+      <!--components/post_message/post_message.wxml-->
+      <view class="post">
+        <view class="post1">
+          <view bindtap="treeContent" data-id="{{index}}" class="post2">
+
+            <!-- 用户名 & 时间 -->
+            <view class="one">
+              <view class="user">
+                <!-- <head></head> -->
+                <image class="head" src='../../image/head{{picNum[index%4]}}.png'></image>
+                <text class="name" decode="true">{{name[index%4]}}</text>
+              </view>
+              
+
+              <text class="time">
+                {{item.time}}
+              </text>
+              
+            </view>
+
+            <!-- 文章内容 -->
+              <text class="potxt">{{item.content}}</text>
+          </view>
+          
+          <!-- 操作列表 -->
+          <view class="option">
+            <view class="option1">
+              <dianzan bindtap="add_dianzan" data-id="{{index}} "></dianzan>
+              <text decode="true" >&nbsp;{{item.likes}}</text>
+              <text decode="true" class="optext">&nbsp;&nbsp;</text>
+              <comment bindtap="treeContent" data-id="{{index}}" ></comment>
+              <text decode="true" >&nbsp;{{item.comments}}</text>
+              <text decode="true">&nbsp;&nbsp;</text>
+              <collect bindtap="add_collect" data-id="{{index}} "></collect>
+              <text decode="true" >&nbsp;{{item.collects}}</text>
+            </view>
+            <view class="option2" bindtap="choiceop" data-id="{{index}}">
+              <more ></more>
+            </view>
+          </view>
+          
+        </view>  
+
+      </view>
+
+
+
+
+      <!-- <post_message bind:add_dianzan="add_dianzan" name="{{item.name}}" post_text="{{item.post_text}}" time="{{item.time}}" zan="{{item.zan}}" comment="{{item.comment}}" collect="{{item.collect}}" >
+      </post_message> -->
+
+    </view> 
+    
+  </view>
+
+  <!-- 編輯模塊 -->
+  <image class="round-click" bindtap="editDairy" src="../../image/click1.png"></image>
+</view>

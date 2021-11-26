@@ -1,0 +1,80 @@
+<image class="bg" src="../../image/back.png"></image>
+<view >
+  <!-- 搜索框 -->
+  <view  class="total1">
+    <view class="search_input"> 
+      <view>
+        <text class="inp">{{text}} </text>
+      </view>
+    </view>
+    <!-- <Searchinput class="search" >
+    </Searchinput> -->
+  </view>
+
+  <view wx:if="{{array.length}}">
+  <!-- 帖子模块 -->
+  <view class="total">
+    <!-- 循环输出帖子列表 -->
+    <view wx:for="{{array}}" wx:key="index">
+      <!--components/post_message/post_message.wxml-->
+      <view class="post">
+        <view class="post1">
+          <view bindtap="searchContent" data-id="{{index}}"  class="post2">
+
+            <!-- 用户名 & 时间 -->
+            <view class="one">
+
+              <view class="user">
+                <!-- <head></head> -->
+                <image class="head" src='../../image/head{{picNum[index%4]}}.png'></image>
+                <text class="name" decode="true">{{name[index%4]}}</text>
+              </view>
+              
+              <text class="time">
+                {{item.time}}
+              </text>
+              
+            </view>
+
+            <!-- 文章内容 -->
+              <text class="potxt">{{item.content}}</text>
+          </view>
+          
+          <!-- 操作列表 -->
+          <view class="option">
+            <view class="option1">
+              <dianzan bindtap="add_dianzan" data-id="{{index}} "></dianzan>
+              <text>{{item.likes}}</text>
+              <text decode="true" class="optext"> &nbsp; &nbsp;</text>
+
+              <comment bindtap="add_comment"></comment>
+              <text decode="true">&nbsp;</text>
+              <text>{{item.comments}}</text>
+              <text decode="true"> &nbsp; &nbsp; &nbsp;</text>
+
+              <collect bindtap="add_collect" data-id="{{index}} "></collect>
+              <text>{{item.collects}}</text>
+            </view>
+            <view class="option2">
+              <more  bindtap="choiceop" data-id="{{index}}"></more>
+            </view>
+          </view>
+          
+        </view>  
+
+      </view>
+
+
+
+
+    </view> 
+    
+  </view>
+</view>
+<block wx:else >
+<view class="voiddiary">
+  <text class="voiddi" decode="{{true}}">  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;空空如也\n\n</text>
+<text class="voiddi">换个关键词试试吧~</text>
+</view>
+</block>
+</view>

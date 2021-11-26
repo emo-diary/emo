@@ -1,0 +1,209 @@
+/* pages/me/me.wxss */
+.headdd-height {
+  height: 240rpx;
+}
+.setimage{
+  width: 80rpx;
+  height: 80rpx;
+  padding:0 20rpx;
+  position: absolute;
+  left: 600rpx;
+  top: 85rpx;
+  margin: auto;
+  /* background-size: 88rpx 86rpx;
+  background-repeat:no-repeat; */
+}
+button[plain]{ border:0 }
+.headdd {
+  display:flex;
+  width: 100%;
+  background-color: transparent;
+  /* background-image: url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211112174645527-277508701.png); */
+  align-items: center;
+  
+}
+
+.login-button {
+  opacity: 0; 
+  width: 100%;
+  position: fixed;
+}
+
+.post{
+  width: 95%;
+  padding-left: 25srpx;
+  padding: 15rpx;  /* 间距 */
+  border-radius: 5rpx;
+  background-color: #ffffff00;
+  border-radius: 20rpx;  /* 圆角的大小 */
+  margin-right: 5rpx;
+
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #333333;
+  font-size: 42rpx;
+}
+
+page{
+  background-image: url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211112174645527-277508701.png);
+}
+.wrap{
+  /* margin-top: 30rpx; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+.list-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 35rpx; 
+  height: 160rpx;
+  width: 92%;
+  background: #ffffff;
+  
+}
+.list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 160rpx;
+  /* background: #CDB5CD; */
+  background: #ffffff;
+}
+
+.item-text {
+  position: relative;
+  top: 30rpx;
+  /* bottom: 20rpx; */
+  font-size: 30rpx;
+
+}
+
+.item-image {
+  position: relative;
+  top: 20rpx;
+  width: 70rpx;
+  height: 70rpx;
+
+}
+
+page {
+  background-color: #f2f2f2;
+  font-size: 28rpx;
+  color: #333;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+  filter: blur(3rpx);
+}
+
+.flex-x {
+  display: flex;
+  align-items: center;
+}
+
+.tree_wrap {
+  border-radius: 35rpx; 
+  /* height: 160rpx; */
+  width: 92%;
+  background: #ffffff00;
+}
+.wrapper2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-top: 15rpx;
+}
+.wrapper{
+  padding-top: 45rpx ;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+
+}
+.nav {
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: 2rpx solid #f2f2f2;
+  background-color: #fff;
+  /* padding-left:30rpx; */
+  border-radius: 17rpx; 
+  margin-bottom: 10rpx;
+}
+
+.active {
+  color: #000;
+  font-size: 30rpx;
+  left: 40rpx;
+  position: relative;
+  font-weight:bold;
+}
+
+.list {
+  height: 160rpx;
+  background-color: pink;
+  margin-bottom: 2rpx;
+}
+
+.nav_fixed {
+  position: fixed;
+  top: 0rpx;
+  left: 30rpx;
+  width: 92%;
+  height: 80rpx;
+  z-index: 999;
+}
+
+
+
+.img-button{
+  padding: 0;
+  border: none;
+}
+
+.voiddiary{
+  width:80%;
+  position:fixed;
+  left:25%;
+  top:60%;
+}
+.voiddi{
+  color:#999;
+  font-size:38rpx;
+  letter-spacing: 5rpx;
+}
+.treeimage{
+  /* position: fixed;
+  bottom: 30rpx;
+  left: 20rpx; */
+  height:100rpx;
+  width: 100rpx;
+  margin-left: 20rpx;
+}

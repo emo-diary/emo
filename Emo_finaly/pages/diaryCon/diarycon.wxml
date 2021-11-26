@@ -1,0 +1,22 @@
+<image class="bg" src="../../images/backg.png"></image>
+<view>
+  <image class="weather" src="../../images/sun1.png"></image>
+</view>
+
+<view class="concon">
+  <view class="dateplay"> 
+    {{month}}
+  </view>
+  <view class="dia-Content">
+    {{content}}
+  </view>
+</view>
+<view class="myemo">
+  <image class="emotion" src="../../images/scraps.png"></image>
+  <view class="mye">我的心情：{{mood}}</view>
+</view>
+<view class="botBtn">
+  <!-- <view class="botBtn1"><view  class="editbot">编辑</view>
+  </view> -->
+  <view bindtap="deleteDia"  class="delebot">删除</view>
+</view>

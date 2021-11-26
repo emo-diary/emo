@@ -1,0 +1,13 @@
+<!--pages/writes/writes.wxml-->
+<view class="date">
+  <text class="day">{{_month + 1}}-{{day}} </text>/{{_year}}
+</view>
+
+<view class="bianji">
+  <view class="wri">
+    <textarea bindinput='textinput' placeholder='抒发您的想法......'maxlength="-1" show-confirm-bar="false" adjust-position="true" value='{{neirong}}' style="width:100%;">
+  </textarea>
+  <text class='botsum'>您已写 {{info}} 个字</text>
+  </view>
+</view>
+<button class="bc" bindtap="commentsuccess">发布</button> 

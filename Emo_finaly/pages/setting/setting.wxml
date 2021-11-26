@@ -1,0 +1,19 @@
+<!--pages/setting/setting.wxml-->
+<view class="list-wrapper">
+    <block wx:for="{{menuitems}}" wx:key="item">
+      <navigator url="{{item.url}}" class="list-item" hover-class="list-item_active">
+        <view class='item'>
+          <image class='item-image' src='{{item.tips}}'></image>
+          <text class="item-text" >{{item.text}}</text>
+          <text class='item-array'>></text>
+        </view>
+        <!-- <view class="div-line"></view> -->
+      </navigator>
+    </block>
+  </view>
+
+<view class="more">
+  <text class="moretext">更多功能敬请期待......</text>
+</view>
+
+<image class="kid" src="/icon/sett.png"></image>

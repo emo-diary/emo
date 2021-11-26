@@ -1,0 +1,4 @@
+<!--components/collect/collect.wxml-->
+<button class="tapbtn1" plain="true" >
+    <image class="tapimg1" src='op3.png'></image>
+</button>

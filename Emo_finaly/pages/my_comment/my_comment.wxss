@@ -1,0 +1,11 @@
+
+.comment{
+  font-size: 17px;
+  font-family:"楷体";
+}
+.voiddiary{
+  width:80%;
+  position:fixed;
+  left:30%;
+  top:35%;
+}

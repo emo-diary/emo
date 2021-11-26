@@ -1,0 +1,204 @@
+.container{
+  padding: 40rpx 0;
+}
+
+.bg{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -9;
+}
+.nav{
+  white-space: nowrap;
+  padding: 5rpx;
+  margin-right: 10rpx;
+}
+.nav-wwrap{
+  display:flex;
+  flex-direction: column;
+  margin-right: 10rpx;
+}
+.nav_item{
+  text-align: center;
+  height:110rpx;
+  width: 100rpx;
+  border-radius: 30rpx;
+  padding: 10rpx 35rpx;
+  margin-right: 30rpx;
+  font-size: 30rpx;
+  display: inline-block;
+  color:#999;
+  /* background-color:#ebf1acf3; */
+  /* box-shadow: 0 15px 15px  rgba(228, 255, 255, 0.8); */
+}
+
+.nav-img{
+  width:90rpx;
+  height:80rpx;
+}
+
+.nav_item.active{
+  /* border-bottom: 5rpx solid #de688d; */
+  background-color: #75deec;
+  color:#fff;
+}
+
+.weather{
+  width:100rpx;
+  height:100rpx;
+  margin-bottom: -20rpx;
+  animation: box-ani 4s  infinite linear;
+  z-index:-3;
+}
+@keyframes box-ani {
+  from {transform: rotate(0)}
+  to {transform: rotate(360deg)}
+}
+.page-body{
+  display: flex;
+  flex-direction: row;
+  width:100%;
+  height:105rpx;
+}
+.datebox{
+  margin: 20rpx;
+  width:60%;
+  display: flex;
+  flex-direction: row;
+}
+
+.diasta{
+  margin-top: 50rpx;
+  width:300rpx;
+  color:rgb(100, 100, 100);
+  font-size:40rpx;
+}
+.selector{
+  height:80rpx;
+  width:100%;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.s_click{
+  display:flex;
+  width:120rpx;
+  height:50rpx;
+  border-radius: 20rpx;
+  background-color:#6AD1DF;
+  text-align: center;
+}
+.round-click{
+  height:90rpx;
+  width: 90rpx;
+  border-radius: 100%;
+    position: fixed;
+    bottom: 80rpx;
+    right: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+/*外部容器*/
+.listview-container {
+  margin: 10rpx 10rpx;
+  margin-bottom: 115rpx;
+}
+  
+/*行样式*/
+.playlog-item {
+  display: flex;
+}
+  
+/*时间轴*/
+.playlog-item .dotline {
+  width: 35px;
+  position: relative;
+}
+  
+/*竖线*/
+.playlog-item .dotline .line {
+  width: 1.5px;
+  height: 100%;
+  background: rgb(106, 209, 223);
+  position: absolute;
+  top: 0;
+  left: 20px; 
+}
+  
+/*圆点*/
+.playlog-item .dotline .dot {
+  width: 20px;
+  height: 20px; 
+  background: rgb(106, 209, 223);
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  border-radius: 100%; 
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+  
+/*时间戳*/
+.playlog-item .dotline .time {
+  width: 100%;
+  position: absolute;
+  margin-top: 30px;
+  z-index: 99;
+  font-size: 12px;
+  color: #777;
+  text-align: center;
+}
+  
+/*右侧主体内容*/
+.playlog-item .content {
+  width: 80%;
+  height:150rpx;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgb(106, 209, 223);
+  margin: 6px 0;
+}
+  
+/*内容部分*/
+.playlog-item .content .chapter {
+  font-size: 30rpx;
+  color: #999;
+  white-space: normal;
+  padding-right: 10px;
+  line-height: 50rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-indent:2em;
+}
+.voiddiary{
+  width:80%;
+  position:fixed;
+  left:15%;
+  top:40%;
+}
+.voiddi{
+  color:#999;
+  font-size:40rpx;
+}
+/*时间部分*/
+.playlog-item .content .ctime {
+  font-size: 28rpx;
+  line-height: 50rpx;
+  color: #666;
+}
+
+
+
+
+

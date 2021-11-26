@@ -1,0 +1,11 @@
+.tapimg1{  
+  width: 45rpx;
+  height: 45rpx;
+}
+ 
+.tapbtn1[plain]{
+  padding: 3rpx;
+  border:none;   
+  width: 45rpx;
+  height: 45rpx;
+}

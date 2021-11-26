@@ -1,0 +1,80 @@
+/* 树洞内容 */
+.t_potxt{
+  height: 100%;
+  padding-left: 5rpx;
+  padding-right: 5rpx;
+  font-size: 18px;
+  font-family:"楷体";
+  line-height: 50rpx;
+  justify-content:center;
+  align-items:center;
+} 
+
+/* “全部评论” */
+.tet{
+  color: #131414;
+  font-size: 16px;
+  font-family:"楷体";
+  margin: 20rpx;
+}
+.tev{
+  margin:10rpx;
+}
+
+
+/* 评论帖子 */
+
+/* 外围框框 */
+.d_post{
+  width: 725rpx;
+  padding: 10rpx;  /* 间距 */
+  border-radius: 5rpx;
+  background-color: #ffffff00;
+  border-radius: 20rpx;  /* 圆角的大小 */
+}
+.d_post1{
+  width: 98%;
+  padding: 10rpx;  /* 间距 */
+  border-radius: 5rpx;
+  background-color: #ffffffea;
+  border-radius: 20rpx;  /* 圆角的大小 */
+  box-shadow: 2rpx 2rpx 6rpx 6rpx #ced6d5;
+} 
+/* 一级用户名时间栏 */
+.d_one{
+  display:flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  line-height:13px;
+  margin:10rpx;
+}
+.d_name{
+  font-size: 15px;
+  font-family:"楷体";
+}
+.d_time{
+  color: #9ca0a0;
+  font-size: 12px;
+  font-family:"楷体";
+}
+/* 二级评论内容 */
+.d_potxt{
+  font-size: 18px;
+  font-family:"楷体";
+  line-height:10rpx;
+}
+/* 三级操作列表（评论只有more） */
+.d_optext{
+  font-size: 18px;
+  font-family:"楷体";
+  line-height:30rpx;
+  color: #97a3a3;
+}
+.d_option{
+  display: flex;
+  flex-direction: row-reverse;
+  margin-bottom: 15rpx;
+  margin-right:15rpx;
+  align-items:baseline ;
+  padding-right: 15rpx
+}

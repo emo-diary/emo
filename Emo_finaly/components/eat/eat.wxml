@@ -1,0 +1,33 @@
+<view class="monster-wrap" hidden="{{!flag1}}">
+
+    <view wx:if="{{flag1}}" class="frame_wrap" 
+      style="background-image: url({{url}});--width:{{width}}rpx;--height:{{height}}rpx;--count:{{count}};--duration:{{duration}};--playNumber:{{playNumber}};">
+    </view>
+    <view wx:if="{{flag1}}">
+      <div class="outer_box"> 
+        <image class="inner_box" src="../../images/scraps.png"></image>
+       </div>
+    </view>
+
+</view>
+    <view wx:if="{{!flag1}}">
+      <image class="monster" src="../../images/Q6.png"></image>
+    </view>
+
+    
+<!-- popup -->
+<view class="wx-popup" hidden="{{flag}}">
+<view class='popup-container'>
+<view class="wx-popup-title">{{title}}</view>
+<view class="wx-popup-con">{{content}}</view>
+<image class="happy" src="../../icon/doge.png"></image>
+<!-- <text class="btn-more" bindtap='_success'>{{btn_ok}}</text> -->
+<view class="btn-nowrap">
+<button class="btn-no" style="width:300rpx;margin-right: 20rpx;" bindtap='_error'>开心啦</button>
+<button class="btn-noo" style="width:300rpx;" bindtap='_uninterested'>不感兴趣</button>
+</view>
+
+<!-- <image class="btn-close" bindtap='_error' src="../../images/no.png"></image> -->
+</view>
+</view>
+

@@ -1,0 +1,24 @@
+<!--pages/writes/writes.wxml-->
+<view class="date">
+  <text class="day">{{_month + 1}}-{{day}} </text>/{{_year}}
+</view>
+
+<!-- 举报的帖子详情 -->
+<view class="title">
+  <text class="t_potxt">树洞内容</text>
+</view>
+<view class="complain">
+  <text class="tt_potxt">{{content_wrap.content}}</text>
+</view>
+<view class="title">
+  <text class="t_potxt">举报理由</text>
+</view>    
+      
+<view class="bianji">
+  <view class="wri">
+    <textarea bindinput='textinput' placeholder='别生气，慢慢说，我在听......'maxlength="-1" show-confirm-bar="false" adjust-position="true" value='{{neirong}}' style="width:90%;margin:15rpx;" >
+  </textarea>
+  <text class='botsum'>您已写 {{info}} 个字</text>
+  </view>
+</view>
+<button class="bc" bindtap="commentsuccess">举报</button> 

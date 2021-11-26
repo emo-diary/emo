@@ -1,0 +1,118 @@
+/* pages/setting/setting.wxss *//* pages/me/me.wxss */
+.head-height {
+  height: 240rpx;
+}
+
+.head {
+  display:flex;
+  width: 100%;
+  background-color: transparent;
+  /* background-image: url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211112174645527-277508701.png); */
+  align-items: center;
+  
+}
+
+.login-button {
+  opacity: 0; 
+  width: 100%;
+  position: fixed;
+}
+
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+}
+
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 30rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #333333;
+  font-size: 42rpx;
+}
+
+page{
+  background-image: url(https://img2020.cnblogs.com/blog/2529663/202111/2529663-20211112174645527-277508701.png);
+}
+
+.list-wrapper {
+  width: 100%;
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 横着的分割View样式 */
+/*分割线样式*/
+.div-line{
+  background:#DBDBDB;
+  width: 96%;
+  height: 5rpx;
+}
+
+.list-item {
+  width: 96%;
+  height: 120rpx;
+  margin-bottom: 15rpx;
+}
+
+/* .list-item_active {
+  background-color: #E0E3DA;
+} */
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 120rpx;
+  width: 96%;
+  background-color: #fff;
+  border-radius: 15rpx; 
+  box-shadow: 2rpx 2rpx 2rpx 2rpx #E0E0E0;
+  position: absolute;
+  
+}
+.item-text {
+  position: fixed;
+  left: 120rpx;
+  font-size: 32rpx;
+}
+.item-array {
+  position: fixed;
+  right: 50rpx;
+  font-size: 38rpx;
+}
+
+.item-image {
+  position: fixed;
+  left: 25rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+.kid{
+  position: fixed;
+  height: 500rpx;
+  width: 400rpx;
+  bottom: 40rpx;
+  left:300rpx;
+}
+.more{
+  width:80%;
+  position:fixed;
+  left:15%;
+  top:45%;
+}
+.moretext{
+  color:#999;
+  font-size:38rpx;
+  letter-spacing: 5rpx;
+}

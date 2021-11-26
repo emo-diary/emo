@@ -1,0 +1,42 @@
+/* pages/writes/writes.wxss */
+.wri{
+
+  margin: 30px;
+  /* text-align: center; */
+  border:1px solid #ddd;
+  height: 600rpx;
+}
+.botsum{
+  position: relative;
+  top: 200rpx; 
+  left:450rpx;
+  font-size: 25rpx;
+  color: rgb(140, 140, 140);
+ }
+
+ .bc{
+  background-color: #7ed8e4; /* Green */
+  border: none;
+  color: white;
+  width: 80%;
+  margin-top: 170rpx;
+  border-radius: 98rpx; 
+  letter-spacing: 15rpx;
+ }
+
+ .date {
+  display: inline-block;
+  margin-top: 24rpx;
+  margin-left: 30rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 30rpx;
+  color: #000000;
+  border-right: 4rpx solid transparent;
+  background-color: #d8eff3;
+  border-radius: 3px;
+}
+ 
+.day {
+  font-family: PingFangSC-Medium;
+  font-size: 60rpx;
+}

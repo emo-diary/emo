@@ -1,0 +1,19 @@
+/**index.wxss**/
+ 
+.btn1{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.tapimg1{  
+  width: 60rpx;
+  height: 60rpx;
+}
+ 
+.tapbtn1[plain]{
+  padding: 0;
+  border:none;   
+  width: 60rpx;
+  height: 60rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/morePush/morepush.wxml-->
+<image class="bg" src="../../images/backg.png"></image>
+<view class="mainconta">
+<view wx:for="{{array}}" wx:key="index"  class="pushItem">
+      <view class="content">
+        <text class=".chapter">{{item.title}}</text>
+      </view>
+</view>
+</view>

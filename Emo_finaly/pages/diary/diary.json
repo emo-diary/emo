@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "Emo_diary",
+  
+  "component": true,
+  "usingComponents": {
+    "eat": "../../components/eat/eat"
+  },
+  "onReachBottomDistance":300
+}

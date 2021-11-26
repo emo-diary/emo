@@ -1,0 +1,7 @@
+/**index.wxss**/
+ 
+.tapimg1{  
+  width: 110rpx;
+  height: 80rpx;
+}
+ 

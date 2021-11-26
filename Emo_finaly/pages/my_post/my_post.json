@@ -1,0 +1,16 @@
+{
+  "backgroundTextStyle":"light",
+  "navigationBarBackgroundColor": "#6AD1DF",
+  "navigationBarTitleText": "我的树洞",
+  "navigationBarTextStyle":"black",
+   
+  "usingComponents": {
+    "dianzan":"../../components/dianzan/dianzan",
+    "comment":"../../components/comment/comment",
+    "collect":"../../components/collect/collect",
+    "more":"../../components/more/more",
+    "delete":"../../components/delete/delete",
+    "head":"../../components/head/head"
+  }
+  
+}
