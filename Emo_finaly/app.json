@@ -1,0 +1,61 @@
+{
+  "pages":[ 
+    "pages/login1/login1",
+    "pages/my_collect/my_collect",
+    "pages/diary/diary",
+    "pages/tree_a/tree_a",
+    "pages/me/me",
+    "pages/complain/complain",
+     "pages/complain_comment/complain_comment",
+    "pages/detail/detail",
+    "pages/my_post/my_post",
+    "pages/my_dianzan/my_dianzan",
+    "pages/my_comment/my_comment",
+    "pages/search_result/search_result",
+    "pages/diaryCon/diarycon",
+    "pages/morePush/morepush",
+    "pages/write/write",
+    "pages/writes/writes",
+    "pages/writesss/writesss",
+    "pages/setting/setting",
+    "pages/our/our",
+    "pages/standard/standard"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#6AD1DF",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/diary.png",
+        "iconPath": "images/diary.png",
+        "pagePath": "pages/diary/diary",
+        "text": "日记"
+      },
+      {
+        "selectedIconPath": "images/tree.png",
+        "iconPath": "images/tree.png",
+        "pagePath": "pages/tree_a/tree_a",
+        "text": "树洞"
+      },
+      {
+        "selectedIconPath": "images/my.png",
+        "iconPath": "images/my.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
+  }
+
+ 
+  
+}
